@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="ScrollableStackView" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1g2-2P-hrC">
+                                <rect key="frame" x="0.0" y="96" width="0.0" height="571"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="ory-JW-xRd">
+                                        <rect key="frame" x="0.0" y="28" width="0.0" height="543"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="loJ-Cb-BPL" customClass="SVLabel" customModule="ScrollableStackView" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="0.0" width="0.0" height="543"/>
+                                                <color key="backgroundColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                <mutableString key="text">User name for the user with some inputs detailsUser name for the user with some inputs detailsUser name for the user with some inputs detailsUser name for the user with some inputs detailsUser name for the user with some inputs detailsUser name for the user with some inputs detailsUser name for the user with some inputs detailsUser name for the user with some inputs detailsUser name for the user with some inputs detailsUser name for the user with some inputs detailsUser name for the user with some inputs detailsUser name for the user with some inputs detailsUser name for the user with some inputs detailsUser name for the user with some inputs detailsUser name for the user with some inputs detailsUser name for the user with some inputs detailsUser name for the user with some inputs detailsUser name for the user with some inputs details</mutableString>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1gX-2O-2Rs" customClass="SVLabel" customModule="ScrollableStackView" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="543" width="0.0" height="0.0"/>
+                                                <color key="backgroundColor" red="1" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                <string key="text">Password of the user with some detailsPassword of the user with some detailsPassword of the user with some detailsPassword of the user with some detailsPassword of the user with some detailsPassword of the user with some detailsPassword of the user with some detailsPassword of the user with some detailsPassword of the user with some detailsPassword of the user with some details</string>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rh1-oq-Vw8" customClass="SVLabel" customModule="ScrollableStackView" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="543" width="0.0" height="0.0"/>
+                                                <color key="backgroundColor" red="0.0" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                <string key="text">Some Text With Variable SizeSome Text With Variable SizeSome Text With Variable SizeSome Text With Variable SizeSome Text With Variable SizeSome Text With Variable SizeSome Text With Variable SizeSome Text With Variable Size</string>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="543" id="JCc-Cl-nrE"/>
+                                        </constraints>
+                                    </stackView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="ory-JW-xRd" secondAttribute="bottom" id="KdU-v9-Rdm"/>
+                                    <constraint firstItem="ory-JW-xRd" firstAttribute="centerX" secondItem="1g2-2P-hrC" secondAttribute="centerX" id="RRe-8P-B73"/>
+                                    <constraint firstItem="ory-JW-xRd" firstAttribute="top" secondItem="1g2-2P-hrC" secondAttribute="top" constant="28" id="r4g-ot-kHV"/>
+                                    <constraint firstItem="ory-JW-xRd" firstAttribute="leading" secondItem="1g2-2P-hrC" secondAttribute="leading" constant="8" id="unt-6p-i3M"/>
+                                    <constraint firstAttribute="trailing" secondItem="ory-JW-xRd" secondAttribute="trailing" constant="8" id="zwC-IY-Orh"/>
+                                </constraints>
+                            </scrollView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7VI-BN-X6p">
+                                <rect key="frame" x="271" y="29" width="58" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Get Text"/>
+                                <connections>
+                                    <action selector="getTextAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="K8z-sG-ogh"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="1g2-2P-hrC" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="CHH-In-hSm"/>
+                            <constraint firstItem="1g2-2P-hrC" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="Rna-wB-ua7"/>
+                            <constraint firstItem="1g2-2P-hrC" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="96" id="cIc-Ox-Ip7"/>
+                            <constraint firstItem="1g2-2P-hrC" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="zDj-0k-cdk"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="label1" destination="loJ-Cb-BPL" id="BwE-eE-uUK"/>
+                        <outlet property="scrollView" destination="1g2-2P-hrC" id="NnH-Lt-oRH"/>
+                        <outlet property="stackView" destination="ory-JW-xRd" id="RHA-uL-PUX"/>
+                        <outlet property="stackViewHeighLC" destination="JCc-Cl-nrE" id="kX4-fC-jJe"/>
+                        <outletCollection property="labels" destination="loJ-Cb-BPL" collectionClass="NSMutableArray" id="qvM-3J-YJl"/>
+                        <outletCollection property="labels" destination="1gX-2O-2Rs" collectionClass="NSMutableArray" id="xiE-Wb-Uqs"/>
+                        <outletCollection property="labels" destination="rh1-oq-Vw8" collectionClass="NSMutableArray" id="3y8-qE-Z8F"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="133.5832083958021"/>
+        </scene>
+    </scenes>
+</document>
