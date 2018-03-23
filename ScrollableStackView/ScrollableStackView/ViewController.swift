@@ -37,7 +37,7 @@ class ViewController: UIViewController {
 
     @IBAction func getTextAction(_ sender: Any) {
         
-        let random = Int(arc4random()%2)
+        let random = Int(arc4random()%3)
         let label = labels[random]
         let string = label.text ?? ""
         let oldHeight = label.getNewHeight()
